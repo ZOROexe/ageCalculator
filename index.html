@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="input">
+                <div class="dayy">
+                    <label for="day" class="dd">DAY</label>
+                    <input type="text" id="day" placeholder="DD">
+                    <p class="empty emptyd">This field is required</p>
+                    <p class="valid validd">Must be a valid day</p>
+                </div>
+                <div class="monthh">
+                    <label for="month" class="mm">MONTH</label>
+                    <input type="text" id="month" placeholder="MM">
+                    <p class="empty emptym">This field is required</p>
+                    <p class="valid validm">Must be a valid month</p>
+                </div>
+                <div class="yearr">
+                    <label for="year" class="yy">YEAR</label>
+                    <input type="text" id="year" placeholder="YYYY">
+                    <p class="empty emptyy">This field is required</p>
+                    <p class="valid validy">Must be a valid year</p>
+                </div>
+            </div>
+            <hr>
+            <button class="btn"><img src="images/icon-arrow.svg" alt=""></button>
+        </form>
+        <section class="op">
+           <div class="years">
+            <span class="spany">--</span><h2>years</h2>
+           </div>
+
+        <div class="months">
+            <span class="spanm">--</span>
+            <h2>months</h2>
+        </div>
+
+        <div class="days">
+            <span class="spand">--</span>
+            <h2>days</h2>
+        </div>
+            
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

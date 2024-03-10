@@ -1,0 +1,151 @@
+:root{
+    --purple: hsl(259, 100%, 65%);
+    --red: hsl(0, 100%, 67%);
+
+    --white: hsl(0, 0%, 100%);
+    --offwhite: hsl(0, 0%, 94%);
+    --lightgrey: hsl(0, 0%, 86%);
+    --smokeygrey: hsl(0, 1%, 44%);
+    --offblack: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins;
+    background-color: var(--lightgrey);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    background-color: var(--white);
+    width: 450px;
+    padding: 2rem;
+    border-radius: 1rem;
+    border-bottom-right-radius: 25%;
+}
+
+input{
+    border: 1px solid var(--smokeygrey);
+    border-radius: 0.3rem;
+    font-family: Poppins;
+    font-weight: 700;
+    padding: 0.5rem;
+    max-width: 100px;
+}
+
+input:hover{
+    cursor: pointer;
+    border: 1px solid var(--purple);
+}
+
+input:active{
+    border: 1px solid var(--purple);
+}
+
+label{
+    color: var(--smokeygrey);
+    font-weight: 600;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.dayy, .monthh, .yearr{
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+    border-top: 1px solid var(--lightgrey);
+}
+
+button{
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-color: var(--purple);
+    right: 1.3rem;
+    top: 5.5rem;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--offblack);
+}
+
+img{
+    width: 28px;
+}
+
+.years, .months, .days{
+    display: flex;
+    align-items: center;
+}
+
+span{
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 800;
+    color: var(--purple);
+    letter-spacing: 3px;
+}
+
+h2{
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.error{
+    display: block;
+}
+
+.empty{
+    display: none;
+    color: var(--red);
+    font-style: italic;
+    font-size: 9px;
+}
+
+.valid{
+    display: none;
+    color: var(--red);
+    font-style: italic;
+    font-size: 9px;
+}
+
+@media (max-width: 500px){
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+
+    button{
+        right: 46%;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    input{
+        width: 100%;
+    }
+
+}
